@@ -10,14 +10,15 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: AzureResourceManagerTemplateDeployment@3
+- task: AzurePowerShell@5
   inputs:
-    deploymentScope: 'Subscription'
-    azureResourceManagerConnection: 'ARMPipeline-conn'
-    subscriptionId: 'f1172213-e651-43f1-876e-a00ad8959726'
-    location: 'West US 2'
-    templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json?token=GHSAT0AAAAAACNUOVTKLCO7U5QWJN6FCIFSZN4VGVA'
-    overrideParameters: '-projectName ARMpipeliningProj'
-    deploymentMode: 'Incremental'
-    deploymentName: 'Lighthouse'
+    azureSubscription: 'SUB-wmslab(1)(f1172213-e651-43f1-876e-a00ad8959726)'
+    ScriptType: 'InlineScript'
+    Inline: |
+      Connect-AzAccount
+      New-AzSubscriptionDeployment -Name AzureLighthouse `
+                       -Location Westus 2 `
+                       -TemplateUri https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json?token=GHSAT0AAAAAACNUOVTLNGZPUI5JFRQHSQYKZN4YZWQ `
+                       -Verbose
+    azurePowerShellVersion: 'LatestVersion'
+    workingDirectory: 'c:\'
