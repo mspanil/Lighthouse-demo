@@ -20,4 +20,4 @@ steps:
     csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json?token=GHSAT0AAAAAACNUOVTK4UG26UEJWMKNLIFCZN4UUMA'
     overrideParameters: '-projectName ARMpipeliningProj'
     deploymentMode: 'Incremental'
-    deploymentName: 'ARMdeployment'
+    deploymentName: 'lighthouse'
