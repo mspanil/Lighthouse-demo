@@ -1,0 +1,176 @@
+{
+ "$schema": "https://schema.management.azure.com/schemas/2019-08-01/subscriptionDeploymentTemplate.json#",
+ "contentVersion": "1.0.0.0",
+ "parameters": {
+  "mspOfferName": {
+   "type": "string",
+   "metadata": {
+    "description": "Specify a unique name for your offer"
+   },
+   "defaultValue": "Cybershield Modern SOC MDR Service-Dev"
+  },
+  "mspOfferDescription": {
+   "type": "string",
+   "metadata": {
+    "description": "Name of the Managed Service Provider offering"
+   },
+   "defaultValue": "Cybershield Modern SOC MDR Service"
+  }
+ },
+ "variables": {
+  "mspRegistrationName": "[guid(parameters('mspOfferName'))]",
+  "mspAssignmentName": "[guid(parameters('mspOfferName'))]",
+  "managedByTenantId": "c509c200-7da7-4d55-8dcb-4fa0c4523916",
+  "authorizations": [
+   {
+    "principalId": "a8ea07fd-fa4e-4ac3-a1f1-51829b9de61f",
+    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
+    "principalIdDisplayName": "DEV-MDRSOCAnalyst"
+   },
+   {
+    "principalId": "a8ea07fd-fa4e-4ac3-a1f1-51829b9de61f",
+    "roleDefinitionId": "51d6186e-6489-4900-b93f-92e23144cca5",
+    "principalIdDisplayName": "DEV-MDRSOCAnalyst"
+   },
+   {
+    "principalId": "49d2ab31-f4f8-4b4f-b369-2f6fb0ffc2aa",
+    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
+    "principalIdDisplayName": "DEV-MDRSOCSrAnalyst"
+   },
+   {
+    "principalId": "49d2ab31-f4f8-4b4f-b369-2f6fb0ffc2aa",
+    "roleDefinitionId": "51d6186e-6489-4900-b93f-92e23144cca5",
+    "principalIdDisplayName": "DEV-MDRSOCSrAnalyst"
+   },
+   {
+    "principalId": "7821ec32-7074-4f10-b9fb-92f8dcc3a5a2",
+    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-PlatformAdmin"
+   },
+   {
+    "principalId": "7821ec32-7074-4f10-b9fb-92f8dcc3a5a2",
+    "roleDefinitionId": "1c9b6475-caf0-4164-b5a1-2142a7116f4b",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-PlatformAdmin"
+   },
+   {
+    "principalId": "7821ec32-7074-4f10-b9fb-92f8dcc3a5a2",
+    "roleDefinitionId": "87a39d53-fc1b-424a-814c-f7e04687dc9e",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-PlatformAdmin"
+   },
+   {
+    "principalId": "7821ec32-7074-4f10-b9fb-92f8dcc3a5a2",
+    "roleDefinitionId": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-PlatformAdmin"
+   },
+   {
+    "principalId": "7821ec32-7074-4f10-b9fb-92f8dcc3a5a2",
+    "roleDefinitionId": "de139f84-1756-47ae-9be6-808fbbe84772",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-PlatformAdmin"
+   },
+   {
+    "principalId": "7821ec32-7074-4f10-b9fb-92f8dcc3a5a2",
+    "roleDefinitionId": "17d1049b-9a84-46fb-8f53-869881c3d3ab",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-PlatformAdmin"
+   },
+   {
+    "principalId": "7821ec32-7074-4f10-b9fb-92f8dcc3a5a2",
+    "roleDefinitionId": "f4c81013-99ee-4d62-a7ee-b3f1f648599a",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-PlatformAdmin"
+   },
+      {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "87a39d53-fc1b-424a-814c-f7e04687dc9e",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "1c9b6475-caf0-4164-b5a1-2142a7116f4b",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "de139f84-1756-47ae-9be6-808fbbe84772",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "2ac5997a-6214-4571-bdc7-492c6435f1f6",
+    "roleDefinitionId": "17d1049b-9a84-46fb-8f53-869881c3d3ab",
+    "principalIdDisplayName": "DEV-MDRSOC-MSS-SOCEngg"
+   },
+   {
+    "principalId": "119d9f1e-7b4c-4da5-bc1f-71401bb3a304",
+    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+    "principalIdDisplayName": "DEV-SOC Lead"
+   },
+  {
+    "principalId": "c659c4c6-e2a0-4571-8b84-5bc46ba86075",
+    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
+    "principalIdDisplayName": "DEV-Threat Hunter"
+   },
+  {
+    "principalId": "c659c4c6-e2a0-4571-8b84-5bc46ba86075",
+    "roleDefinitionId": "39bc4728-0917-49c7-9d2c-d95423bc2eb4",
+    "principalIdDisplayName": "DEV-Threat Hunter"
+   },
+  {
+    "principalId": "5ecc7ae5-5b05-4b17-bfdf-dbd3eff36e6b",
+    "roleDefinitionId": "fb1c8493-542b-48eb-b624-b4c8fea62acd",
+    "principalIdDisplayName": "DEV-MDR-M365-SecurityAdmin"
+   }
+  ]
+ },
+ "resources": [
+  {
+   "type": "Microsoft.ManagedServices/registrationDefinitions",
+   "apiVersion": "2020-02-01-preview",
+   "name": "[variables('mspRegistrationName')]",
+   "properties": {
+    "registrationDefinitionName": "[parameters('mspOfferName')]",
+    "description": "[parameters('mspOfferDescription')]",
+    "managedByTenantId": "[variables('managedByTenantId')]",
+    "authorizations": "[variables('authorizations')]"
+   }
+  },
+  {
+   "type": "Microsoft.ManagedServices/registrationAssignments",
+   "apiVersion": "2020-02-01-preview",
+   "name": "[variables('mspAssignmentName')]",
+   "dependsOn": [
+    "[resourceId('Microsoft.ManagedServices/registrationDefinitions/', variables('mspRegistrationName'))]"
+   ],
+   "properties": {
+    "registrationDefinitionId": "[resourceId('Microsoft.ManagedServices/registrationDefinitions/', variables('mspRegistrationName'))]"
+   }
+  }
+ ],
+ "outputs": {
+  "mspOfferName": {
+   "type": "string",
+   "value": "[concat('Managed by', ' ', parameters('mspOfferName'))]"
+  },
+  "authorizations": {
+   "type": "array",
+   "value": "[variables('authorizations')]"
+  }
+ }
+}
