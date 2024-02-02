@@ -19,5 +19,5 @@ steps:
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json?token=GHSAT0AAAAAACNUOVTKMWN6EDOYX2NYEZVMZN4UCCQ'
     overrideParameters: '-projectName ARMpipeliningProj'
-    deploymentMode: 'Complete'
-    deploymentName: 'Lighthousedeployment'
+    deploymentMode: 'Incremental'
+    deploymentName: 'ARMdeployment'
