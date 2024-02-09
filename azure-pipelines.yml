@@ -10,6 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Subscription'
@@ -17,7 +18,6 @@ steps:
     subscriptionId: 'f1172213-e651-43f1-876e-a00ad8959726'
     location: 'West US 2'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json?token=GHSAT0AAAAAACNUOVTLWOIPPH6DY6HE63NGZODPXDQ'
-    overrideParameters: '-projectName ARMpipeliningProj'
+    csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'lighthouse'
+    deploymentName: 'lihht'
