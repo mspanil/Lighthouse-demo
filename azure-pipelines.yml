@@ -18,5 +18,5 @@ steps:
     location: 'West US 2'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json'
-    overrideParameters: '''-mspOfferName "Cybershield Modern SOC MDR Service-Dev" -mspOfferDescription "Cybershield Modern SOC MDR Service"'''
+    overrideParameters: '-mspOfferName "Cybershield Modern SOC MDR Service-Dev" -mspOfferDescription "Cybershield Modern SOC MDR Service"'
     deploymentMode: 'Incremental'
