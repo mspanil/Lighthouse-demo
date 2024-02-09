@@ -20,3 +20,4 @@ steps:
     csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json'
     overrideParameters: '-mspOfferName "Cybershield Modern SOC MDR Service-Dev" -mspOfferDescription "Cybershield Modern SOC MDR Service"'
     deploymentMode: 'Incremental'
+    deploymentName: 'light'
