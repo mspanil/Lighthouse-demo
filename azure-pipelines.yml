@@ -10,7 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Subscription'
@@ -19,5 +18,5 @@ steps:
     location: 'West US 2'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Cybershield1.json'
-    overrideParameters: 'mspOfferName'
+    overrideParameters: '''-mspOfferName "Cybershield Modern SOC MDR Service-Dev" -mspOfferDescription "Cybershield Modern SOC MDR Service"'''
     deploymentMode: 'Incremental'
