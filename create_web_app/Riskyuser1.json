@@ -1,9 +1,0 @@
-
-{
-  "NameForModel": "Fetch Risky user details",
-  "NameForHuman": "Fetch Risky user details",
-  "DescriptionForModel": "Fetch Risky user details",
-  "DescriptionForHuman": "Fetch Risky user details",
-  "Auth": "Basic",
-  "Api": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Riskyuser.json"
-}
