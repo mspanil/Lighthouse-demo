@@ -1,0 +1,18 @@
+{
+    "Descriptor": {
+        "Name": "Fetch Risky user details",
+        "DisplayName": "Fetch Risky user details",
+        "Description": "Fetch Risky user details",
+        "SupportedAuthTypes": [
+            "Basic"
+        ]
+    },
+    "SkillGroups": [
+        {
+            "Format": "API",
+            "Settings": {
+                "OpenApiSpecUrl": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240216171900.yaml"
+            }
+        }
+    ]
+}
