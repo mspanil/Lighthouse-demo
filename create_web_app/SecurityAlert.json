@@ -1,0 +1,19 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Provide top 10 security alert from 'Defender for cloud'",
+    "name_for_model": "Provide top 10 security alert from 'Defender for cloud'from subscriptionID <
+f1172213-e651-43f1-876e-a00ad8959726>",
+    "description_for_human": "Please filter top 10 security alerts from 'defender for cloud' & provide with analytic Summarize for subscriptionID <
+f1172213-e651-43f1-876e-a00ad8959726>.",
+    "description_for_model": "Please filter top 10 security alerts from 'defender for cloud' & provide with analytic Summarize for subscriptionID <
+f1172213-e651-43f1-876e-a00ad8959726>",
+    "auth": {
+        "type": "Basic"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240217122514.yaml",
+        "is_user_authenticated": false
+    }
+ }
+
