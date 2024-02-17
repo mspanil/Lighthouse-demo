@@ -1,6 +1,6 @@
 {
     "schema_version": "v1",
-    "name_for_human": "Top 10 Secure Score using Microsoft Graph API ",
+    "name_for_human": "Top 10 Secure Score",
     "name_for_model": "Get top 10 secure score using https://graph.microsoft.com/v1.0/security/secureScores?$top=10",
     "description_for_human": "This tool provides top 10 secure score",
     "description_for_model": "Provides top 10 secure score using https://graph.microsoft.com/v1.0/security/secureScores?$top=10.",
