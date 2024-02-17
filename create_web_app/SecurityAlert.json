@@ -1,0 +1,16 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Top 10 Security Alerts",
+    "name_for_model": "Get top 10 security Alerts",
+    "description_for_human": "Provide top 10 security alerts details from security center & Summarize.",
+    "description_for_model": "Provide top 10 security alerts details from security center & Summarize.",
+    "auth": {
+        "type": "Basic"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240217122514.yaml",
+        "is_user_authenticated": false
+    }
+ }
+
