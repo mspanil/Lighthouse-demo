@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "SecureScore",
+    "name_for_model": "SecureScore",
+    "description_for_human": "This tool checks SecureScore.",
+    "description_for_model": "SecureScore.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240216190933.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://hacktrack.routum.io/logo.png",
+    "contact_email": "anil.ranjan@wipro.com",
+    "legal_info_url": "https://hacktrack.routum.io/terms-of-use.html"
+}
