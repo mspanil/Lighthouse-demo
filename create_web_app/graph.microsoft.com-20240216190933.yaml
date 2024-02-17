@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+  title: SecureScore
+  description: Get Secure score for wmslab.net subscription. Please ask subscriptionId .". and Please aks secureScoreName.". by query
+  version: 'v1'
+servers:
+  - url: GET https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Security/secureScores/{secureScoreName}?api-version=2020-01-01
+paths:
+    /providers/Microsoft.Security/secureScores/{secureScoreName}?api-version=2020-01-01:
+    get:
+      operationId: getsecurescore
+      summary: Get Secure score for subscriptionId.
+      parameters:
+      - in: path
+        name: Securescore
+        schema:
+            type: string
+        required: true
+        description: subscriptionId.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '/providers/Microsoft.Security/secureScores/{secureScoreName}?api-version=2020-01-01'
+
+components:
+  schemas:
+    getSecurescore:
+      type: object
+      properties:
+        todos:
+          type: array
+          items:
+            type: string
+          description: The list of securescore.
