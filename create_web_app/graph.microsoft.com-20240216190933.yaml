@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: SecureScore
+  description: Get Secure score.
+  version: 'v1'
+  secureScoreName: ascScore
+servers:
+  - url: GET https://management.azure.com/subscriptions/f1172213-e651-43f1-876e-a00ad8959726/providers/Microsoft.Security/secureScores/{secureScoreName}?api-version=2020-01-01
+paths:
+    /providers/Microsoft.Security/secureScores/{secureScoreName}?api-version=2020-01-01:
+    get:
+      operationId: getsecurescore
+      summary: Get Secure score for subscriptionId.
+      parameters:
+      - in: path
+        name: ascScore
+        schema:
+            type: string
+        required: true
+        description: Get Secure secure.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '/providers/Microsoft.Security/secureScores/{secureScoreName}?api-version=2020-01-01'
+
+components:
+  schemas:
+    getSecurescore:
+      type: object
+      properties:
+        todos:
+          type: array
+          items:
+            type: string
+          description: The list of securescore.
