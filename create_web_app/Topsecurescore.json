@@ -1,6 +1,6 @@
 {
     "schema_version": "v1",
-    "name_for_human": "Top 10 Secure Score and summarize",
+    "name_for_human": "Top 10 Secure Score and summarize (AKR-APIPG1)",
     "name_for_model": "Get top 10 secure score & Summarize (AKR-APIPG1)",
     "description_for_human": "Get top 10 secure score using Graph API",
     "description_for_model": "Get Secure score from Microsoft Graph API & Summarize",
