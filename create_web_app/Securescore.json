@@ -1,9 +1,9 @@
 {
     "schema_version": "v1",
-    "name_for_human": "SecureScore",
-    "name_for_model": "SecureScore",
-    "description_for_human": "This tool checks SecureScore.",
-    "description_for_model": "SecureScore.",
+    "name_for_human": "Top 10 Secure Score",
+    "name_for_model": "Get top 10 secure score",
+    "description_for_human": "Get top 10 secure score using Graph API",
+    "description_for_model": "Get https://graph.microsoft.com/v1.0/security/secureScores/.",
     "auth": {
         "type": "none"
     },
@@ -11,11 +11,6 @@
         "type": "openapi",
         "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240216190933.yaml",
         "is_user_authenticated": false
-    },
-    "logo_url": "https://hacktrack.routum.io/logo.png",
-    "contact_email": "anil.ranjan@wipro.com",
-    "legal_info_url": "https://hacktrack.routum.io/terms-of-use.html"
-}
-
-
+    }
+ }
 
