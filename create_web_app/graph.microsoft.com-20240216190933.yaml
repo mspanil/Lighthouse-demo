@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
-  title: SecureScore
-  description: Get Secure score.
+  title: Get SecureScore from Microsoft Graph API
+  description: Get Secure score from Graph API.
   version: 'v1'
 servers:
   - url: https://management.azure.com/subscriptions/f1172213-e651-43f1-876e-a00ad8959726/providers/Microsoft.Security/secureScores/ascScore?api-version=2020-01-01
@@ -23,7 +23,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '/providers/Microsoft.Security/secureScores/{secureScoreName}?api-version=2020-01-01'
+                $ref: '/providers/Microsoft.Security/secureScores/ascScore?api-version=2020-01-01'
 
 components:
   schemas:
