@@ -8,7 +8,7 @@ servers:
 - url: https://graph.microsoft.com
 paths:
   "/v1.0/security/secureScores":
-    description: Provides top secureScores from Defender for cloud using Microsoft Graph API.
+    description: Get top secureScores from Defender for cloud using Microsoft Graph API.
     get:
       summary: Get top secureScores
       operationId: Get.v1.0.security.secureScores
