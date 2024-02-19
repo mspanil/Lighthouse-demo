@@ -10,6 +10,7 @@
     "api": {
         "type": "openapi",
         "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240216190933.yaml",
+         "is_user_authenticated": false
     }
  }
 
