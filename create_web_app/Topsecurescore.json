@@ -1,9 +1,9 @@
 {
     "schema_version": "v1",
-    "name_for_human": "Top 10 Secure Score",
-    "name_for_model": "Get top 10 secure score",
+    "name_for_human": "Top 10 Secure Score and summarize",
+    "name_for_model": "Get top 10 secure score & Summarize",
     "description_for_human": "Get top 10 secure score using Graph API",
-    "description_for_model": "Get https://graph.microsoft.com/v1.0/security/secureScores/.",
+    "description_for_model": "Get Secure score from Microsoft Graph API & Summarize",
     "auth": {
         "type": "none"
     },
