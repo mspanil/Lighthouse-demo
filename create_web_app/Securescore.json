@@ -2,8 +2,8 @@
     "schema_version": "v1",
     "name_for_human": "Get Secure Score",
     "name_for_model": "Get secure score",
-    "description_for_human": "Get secure score using Graph API",
-    "description_for_model": "Get https://management.azure.com/subscriptions/f1172213-e651-43f1-876e-a00ad8959726/providers/Microsoft.Security/secureScores/ascScore?api-version=2020-01-01
+    "description_for_human": "Get secure score using API",
+    "description_for_model": "Get Secure Score from https://management.azure.com/subscriptions/f1172213-e651-43f1-876e-a00ad8959726/providers/Microsoft.Security/secureScores/ascScore?api-version=2020-01-01
 ",
     "auth": {
         "type": "none"
