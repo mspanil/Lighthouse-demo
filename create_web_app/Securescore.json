@@ -4,8 +4,6 @@
     "name_for_model": "Get secure score",
     "description_for_human": "Get secure score using Graph API from Security Center",
     "description_for_model": "Get https://graph.microsoft.com/v1.0/security/secureScores/.",
-    "auth": {
-        "type": "none"
     },
     "api": {
         "type": "openapi",
