@@ -1,0 +1,64 @@
+---
+openapi: 3.0.1
+info:
+  title: Get Top secureScore from Defender for cloud using https://graph.microsoft.com API
+  description: Get Top secureScore using Get https://graph.microsoft.com/v1.0/security/secureScores/
+  version: v1.0
+servers:
+- url: https://graph.microsoft.com
+paths:
+  "/v1.0/security/secureScores":
+    description: Provides top secureScores from Defender for cloud using Microsoft Graph API.
+    get:
+      summary: Get top secureScores
+      operationId: Get.v1.0.security.secureScores
+      parameters:
+      - name: "$top"
+        in: query
+        schema:
+          type: string
+      - name: sec-ch-ua-platform-version
+        in: header
+        schema:
+          type: string
+      - name: X-Edge-Shopping-Flag
+        in: header
+        schema:
+          type: string
+      responses:
+        '401':
+          description: Unauthorized
+          headers:
+            request-id:
+              schema:
+                type: string
+            client-request-id:
+              schema:
+                type: string
+            x-ms-ags-diagnostic:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                      message:
+                        type: string
+                      innerError:
+                        type: object
+                        properties:
+                          date:
+                            type: string
+                          request-id:
+                            type: string
+                          client-request-id:
+                            type: string
+x-ms-generated-by:
+  toolName: Dev Proxy
+  toolVersion: 0.14.1
