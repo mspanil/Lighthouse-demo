@@ -7,14 +7,13 @@
     "auth": {
         "type": "OAuthAuthorizationCodeFlow",
         "ClientId": "db4ef679-cad1-4740-82ed-792749ec60d9",
-        "ClientSecret":"x~Q8Q~zA1olHEjGMqUkShdRaK5dUrqkX24HwEahG",
-        "TokenEndpoint": "https://graph.microsoft.com",
+        "ClientSecret": "x~Q8Q~zA1olHEjGMqUkShdRaK5dUrqkX24HwEahG",
+        "TokenEndpoint": "https://graph.microsoft.com/token",
         "Scopes": "Get",
-        "AuthorizationEndpoint":"https://graph.microsoft.com",
+        "AuthorizationEndpoint": "https://graph.microsoft.com/authorize"
     },
     "api": {
         "type": "openapi",
-        "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240217112439.yaml",
- }
- }
-
+        "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240217112439.yaml"
+    }
+}
