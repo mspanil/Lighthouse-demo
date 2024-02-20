@@ -1,30 +1,19 @@
 {
-    "title": "Top 10 Secure Score and Summarize",
-    "description": "Get top 10 secure scores using Graph API and summarize the results.",
-    "tags": ["security", "Microsoft Graph API"],
+    "name_for_human": "Top 10 Secure Score and Summarize",
+    "name_for_model": "Get top 10 secure score & Summarize (AKR-APIPG1)",
+    "description_for_human": "Get top 10 secure score using Graph API",
+    "description_for_model": "Get Secure score from Microsoft Graph API & Summarize",
     "auth": {
-        "type": "oauth2",
+        "type": "OAuth2",
+        "clientId": "db4ef679-cad1-4740-82ed-792749ec60d9",
+        "clientSecret": "x~Q8Q~zA1olHEjGMqUkShdRaK5dUrqkX24HwEahG",
         "tokenUrl": "https://graph.microsoft.com/token",
         "scopes": [
             "https://graph.microsoft.com/.default"
-        ],
-        "clientId": "db4ef679-cad1-4740-82ed-792749ec60d9",
-        "clientSecret": "x~Q8Q~zA1olHEjGMqUkShdRaK5dUrqkX24HwEahG"
+        ]
     },
     "api": {
         "type": "openapi",
         "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240217112439.yaml"
-    },
-    "endpoints": [
-        {
-            "name": "Secure Score",
-            "description": "Endpoint to fetch secure scores from Microsoft Graph API",
-            "auth": "oauth2",
-            "method": "GET",
-            "url": "https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240217112439.yaml",
-            "headers": {
-                "Content-Type": "application/json"
-            }
-        }
-    ]
+    }
 }
