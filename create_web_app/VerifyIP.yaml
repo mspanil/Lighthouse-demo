@@ -5,16 +5,12 @@ Descriptor:
   SupportedAuthTypes:
     - ApiKey
   Authorization:
-   Type: Apikey
+   Type: APIKey
    Key: IPQS-key
    Location: Header
-   AuthSchemes: ''
+   AuthScheme: ''
+
 SkillGroups:
   - Format: API
     Settings:
-    OpenApiSpecUrl: https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Virify-open-specs.yaml
-
-
-
-
-
+      OpenApiSpecUrl: https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Virify-open-specs.yaml
