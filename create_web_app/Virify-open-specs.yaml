@@ -1,0 +1,39 @@
+---
+openapi: 3.0.1
+info:
+  title: Mallicious url scanner API
+  description: real-time scanning of URLs to detect malicious activity and assess the reputation of domains
+  version: "v1"
+servers:
+- url: https://ipqualityscore.com/api/json/url
+
+Components:
+  securitySchemes:
+  ApikeyAuth:
+    type: apikey
+    in: header
+    nane: IPQS-key
+paths:
+  /:
+    get:
+      operationid: ScanURL
+      summary: Get top secureScores
+      operationId: Scan a URL and get the results
+      parameters:
+      - in: query
+        name: url
+        required: true
+        schema:
+          type: string
+        description: The URL to be scanned, i.e. www.google.com
+      # Add other query parameters as needed
+     responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '500':
+          description: Internal Server Error
+      Security:
+         -ApikeyAuth: []
+          
