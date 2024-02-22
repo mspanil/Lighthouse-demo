@@ -4,9 +4,9 @@ Descriptor:
   Description: Scan url in real-time to detect malicious sites, scan sites,phishing,Malware and low reputation domains.
   SupportedAuthTypes:
     - ApiKey
- Authorization:
+  Authorization:
    Type: Apikey
-   Key : 1dF5Sz1Rp1yG8xM1jbnRpglNobUDjqk5
+   Key: IPQS-key
    Location: Header
    AuthSchemes: ""
 SkillGroups:
