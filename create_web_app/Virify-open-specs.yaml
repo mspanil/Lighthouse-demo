@@ -12,7 +12,7 @@ Components:
   ApikeyAuth:
     type: apikey
     in: header
-    name: IPQS-key
+    Key: 1dF5Sz1Rp1yG8xM1jbnRpglNobUDjqk5
 paths:
   /:
     get:
