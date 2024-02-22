@@ -6,7 +6,7 @@ Descriptor:
     - ApiKey
  Authorization:
    Type: Apikey
-   Key : IPQS-key
+   Key : 1dF5Sz1Rp1yG8xM1jbnRpglNobUDjqk5
    Location: Header
    AuthSchemes: ""
 SkillGroups:
