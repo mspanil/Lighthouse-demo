@@ -12,7 +12,7 @@ Components:
   ApikeyAuth:
     type: apikey
     in: header
-    Key: 1dF5Sz1Rp1yG8xM1jbnRpglNobUDjqk5
+    Key: IPQS-key
 paths:
   /:
     get:
@@ -27,7 +27,7 @@ paths:
           type: string
         description: The URL to be scanned, i.e. www.google.com
       # Add other query parameters as needed
-     responses:
+      responses:
         '200':
           description: Success
         '400':
