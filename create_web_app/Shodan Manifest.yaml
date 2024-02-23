@@ -13,4 +13,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Shodan-open-specs.yaml
