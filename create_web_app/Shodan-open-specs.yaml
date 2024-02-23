@@ -1,4 +1,3 @@
----
 openapi: 3.0.0
 
 info:
@@ -6,14 +5,14 @@ info:
   version: "1.0.0"
 
 servers:
-- url: https://api.shodan.io
+  - url: https://api.shodan.io
 
 Components:
-  securitySchemes:
-    ApikeyAuth:
-      type: apikey
-      in: query
-      name: key
+   securitySchemes:
+     ApikeyAuth:
+       type: apikey
+       in: query
+       name: key
 
 tags:
   - name: Search Methods
@@ -34,18 +33,18 @@ paths:
           - in: query
             name: mimify
             schema:
-               type: boolean
+              type: boolean
           - in: path
             name: ip
             required: true
             schema:
-               type: string
+              type: string
         responses:
           '200':
-            description: Success
+             description: Success
           '400':
-            description: Bad Request
+             description: Bad Request
           '500':
-            description: Internal Server Error
+             description: Internal Server Error
 
           
