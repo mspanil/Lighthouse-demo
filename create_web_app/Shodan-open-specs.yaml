@@ -1,5 +1,6 @@
 ---
-openapi: 3.0.1
+openapi: 3.0.0
+
 info:
   title: Shodan REST API Documentation
   version: "1.0.0"
@@ -24,7 +25,7 @@ paths:
         tags:
           - Search Methods
         security:
-          - ApiKeyAuth: []
+          - ApikeyAuth: []
         parametes:
           - in: query
             name: history
