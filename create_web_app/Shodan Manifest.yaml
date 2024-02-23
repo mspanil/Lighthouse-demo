@@ -1,7 +1,7 @@
 Descriptor:
   Name: Shodan scanner
   DisplayName: Shodan scanner
-  Description: Internet with shodan to scan IPs, search for hosts, and more.
+  Description: Interact with shodan to scan IPs, search for hosts, and more.
   SupportedAuthTypes:
     - ApiKey
   Authorization:
