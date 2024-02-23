@@ -1,0 +1,16 @@
+Descriptor:
+  Name: Shodan scanner
+  DisplayName: Shodan scanner
+  Description: Internet with shodan to scan IPs, search for hosts, and more.
+  SupportedAuthTypes:
+    - ApiKey
+  Authorization:
+   Type: APIKey
+   Key: key
+   Location: QueryParams
+   AuthScheme: ''
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl:
