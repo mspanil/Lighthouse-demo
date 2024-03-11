@@ -13,7 +13,6 @@ paths:
     get:
       operationId: Get.v1.0.security.alerts from url
       summary: Get alerts
-      operationId: Get alets from url and summarize
       
       parameters:
       - name: "$filter"
