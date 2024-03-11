@@ -1,0 +1,40 @@
+---
+openapi: 3.0.1
+info:
+   title: https://graph.microsoft.com API
+   description: https://graph.microsoft.com API
+   version: v1.0
+servers:
+    - url: https://graph.microsoft.com/v1.0/security/alerts
+paths:
+   /:
+    Get:  
+    description: Provides operations to manage alerts
+    get:
+      operationId: Get.v1.0.security.alerts from url
+      summary: Get alerts
+      operationId: Get alets from url and summarize
+      
+      parameters:
+      - name: "$filter"
+        in: query
+        schema:
+          type: string
+      - name: "$top"
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+          
+      Security:
+         -ApikeyAuth: []
+
+
+vikramanand
+
