@@ -1,0 +1,16 @@
+Descriptor:
+  Name: Fetch Top 10 Security Alert details
+  DisplayName: Fetch Top 10 Security Alert details
+  Description: Fetch Top 10 Security Alert details from Defender for Cloud
+  SupportedAuthTypes:
+    - ApiKey
+  Authorization:
+   Type: APIKey
+   Key: key
+   Location: Header
+   AuthScheme: ''
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-t20240217122514.yaml
