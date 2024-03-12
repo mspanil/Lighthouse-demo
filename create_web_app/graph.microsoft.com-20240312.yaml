@@ -1,0 +1,35 @@
+openapi: "3.0.0"
+info:
+  title: Microsoft Graph API
+  description: Configuration for accessing Microsoft Graph API
+  version: 1.0.0
+servers:
+  - url: https://graph.microsoft.com/v1.0
+paths:
+  /me:
+    get:
+      summary: Get current user details
+      operationId: getCurrentUser
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: The user's ID
+                  displayName:
+                    type: string
+                    description: The user's display name
+                  email:
+                    type: string
+                    description: The user's email address
+                required:
+                  - id
+                  - displayName
+                  - email
+      security:
+        - ApiKeyAuth: []
