@@ -1,7 +1,7 @@
 Descriptor:
-  Name: Microsoft Graph API Access
-  DisplayName: Microsoft Graph API Access
-  Description: Configuration for accessing Microsoft Graph API
+  Name: Get current user details
+  DisplayName: Get current user details
+  Description: Get current user details from Microsoft Graph API (AKR20)
   SupportedAuthTypes:
     - APIKey
   Authorization:
