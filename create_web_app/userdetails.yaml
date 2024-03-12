@@ -1,0 +1,19 @@
+Descriptor:
+  Name: Microsoft Graph API Access
+  DisplayName: Microsoft Graph API Access
+  Description: Configuration for accessing Microsoft Graph API
+  SupportedAuthTypes:
+    - OAuth2
+  Authorization:
+    Type: OAuth2
+    AuthorizationUrl: https://login.microsoftonline.com/your-tenant-id/oauth2/v2.0/authorize
+    TokenUrl: https://login.microsoftonline.com/your-tenant-id/oauth2/v2.0/token
+    Scopes:
+      - openid
+      - profile
+      - email
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/graph.microsoft.com-20240312.yaml
