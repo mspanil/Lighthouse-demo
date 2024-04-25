@@ -1,0 +1,36 @@
+name: Secure Scores API
+description: Fetch secure scores from Microsoft Defender for Cloud using the Graph API
+version: 1.0.0
+openApiSpecUrl: https://raw.githubusercontent.com/mspanil/Lighthouse-demo/main/create_web_app/Secure_score.yaml
+author: Your Name
+commands:
+  - name: GetSecureScores
+    description: Retrieve secure scores for cloud resources
+    script: get_secure_scores.py
+    arguments:
+      - name: resourceId
+        description: ID of the cloud resource
+        type: string
+        required: true
+dependencies:
+  - name: requests
+    version: 2.26.0
+authorization:
+  type: OAuthAuthorizationCodeFlow
+  clientId: db4ef679-cad1-4740-82ed-792749ec60d9
+  authorizationEndpoint: https://login.microsoftonline.com/c1d91f8d-b889-4794-9127-3d00a3bfd2fc/oauth2/v2.0/authorize
+  tokenEndpoint: https://login.microsoftonline.com/c1d91f8d-b889-4794-9127-3d00a3bfd2fc/oauth2/v2.0/token
+  scopes:
+    - user.read
+    - secureScore.read
+SkillsetDescriptor:
+  Name: SecureScoresSkillset
+  Description: Provides secure scores from Microsoft Defender for Cloud
+  Skills:
+    - Name: GetSecureScores
+      Description: Retrieves secure scores for cloud resources
+      Arguments:
+        - Name: resourceId
+          Description: ID of the cloud resource
+          Type: string
+          Required: true
